@@ -33,7 +33,7 @@ module.exports = function () {
 
     this.Then( /^I should see a success message$/, { timeout: 5 * 1000 }, function ( done ) {
         browser
-            .waitForVisible( '#email-alert-signup > div.form-row.required.js-form-row-container > div.field-wrapper > span', 5 )
+            .waitForVisible( '#email-alert-signup > div.form-row.required.js-form-row-container > div.field-wrapper > span', 10 )
             .call( done );
     });
 };
