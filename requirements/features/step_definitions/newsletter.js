@@ -15,7 +15,7 @@ module.exports = function () {
     this.When( /^I input a valid email address to the newsletter field$/, function ( done ) {
         browser
             .click( '//*[@id="dwfrm_newslettersignup_email"]' )
-            .setValue( '#dwfrm_newslettersignup_email','test+5@gmail.com' )
+            .setValue( '#dwfrm_newslettersignup_email','tester@gmail.com' )
             .call( done );
     });
 
