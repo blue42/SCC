@@ -26,7 +26,7 @@ module.exports = function () {
             .call( done );
     });
 
-    this.Then( /^the product that I searched for should display$/, {timeout: 10 * 1000}, function( done ) {
+    this.Then( /^the product that I searched for should display$/, { timeout: 10 * 1000 }, function( done ) {
         browser
             .waitForVisible( '#b89d5f0df4cce2f1aafff1e1b6 > div.product-info > a > div.product-model-number > p', 10000 )
             .call( done );

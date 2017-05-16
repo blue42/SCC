@@ -31,9 +31,9 @@ module.exports = function () {
             .call( done );
     });
 
-    this.Then( /^I should see a success message$/, { timeout: 5 * 1000 }, function ( done ) {
+    this.Then( /^I should see a success message$/, { timeout: 1 * 1000 }, function ( done ) {
         browser
-            .waitForVisible( '#email-alert-signup > div.form-row.required.js-form-row-container > div.field-wrapper > span', 10 )
+            .waitForVisible( '#email-alert-signup > div.form-row.required.js-form-row-container > div.field-wrapper > span' )
             .call( done );
     });
 };
